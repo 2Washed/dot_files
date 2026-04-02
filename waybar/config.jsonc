@@ -23,16 +23,7 @@
     },
     "hyprland/workspaces": {
         "format": "{name}",
-        "all-outputs": false,
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "active": "",
-            "default": ""
-        }
+        "all-outputs": false
     },
     "tray": {
         "icon-size": 21,
@@ -71,7 +62,8 @@
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} ",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50
+        "max-length": 50,
+        "on-click": "~/.config/rofi/applets/bin/wifi.sh"
     },
     "battery": {
         "bat": "BAT0",

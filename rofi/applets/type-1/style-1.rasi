@@ -58,7 +58,7 @@ inputbar {
     border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;
-    children:                    [ "textbox-prompt-colon", "prompt"];
+    children:                    [ "textbox-prompt-colon", "prompt", "entry"];
 }
 
 textbox-prompt-colon {
@@ -76,6 +76,15 @@ prompt {
     border-radius:               0px;
     background-color:            @active;
     text-color:                  @background;
+}
+
+entry {
+    enabled: true;
+    padding: 10px;
+    border-radius: 0px;
+    background-color: @background-alt;
+    text-color: @foreground;
+    placeholder: "Type here...";
 }
 
 /*****----- Message -----*****/
